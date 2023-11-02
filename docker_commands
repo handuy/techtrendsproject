@@ -36,3 +36,24 @@ INFO:_internal:02-Nov-23 01:19:58 - 192.168.215.1 - - [02/Nov/2023 01:19:58] "GE
 INFO:app:02-Nov-23 01:20:00 - Article 'Kubernetes Certification' retrieved
 INFO:_internal:02-Nov-23 01:20:00 - 192.168.215.1 - - [02/Nov/2023 01:20:00] "GET /6 HTTP/1.1" 200 -
 INFO:_internal:02-Nov-23 01:20:01 - 192.168.215.1 - - [02/Nov/2023 01:20:01] "GET / HTTP/1.1" 200 -
+INFO:_internal:02-Nov-23 02:36:58 - 192.168.215.1 - - [02/Nov/2023 02:36:58] "GET / HTTP/1.1" 200 -
+INFO:app:02-Nov-23 02:37:00 - Article '2020 CNCF Annual Report' retrieved
+INFO:_internal:02-Nov-23 02:37:00 - 192.168.215.1 - - [02/Nov/2023 02:37:00] "GET /1 HTTP/1.1" 200 -
+INFO:app:02-Nov-23 02:37:03 - Article with id = 100 is not found
+INFO:_internal:02-Nov-23 02:37:03 - 192.168.215.1 - - [02/Nov/2023 02:37:03] "GET /100 HTTP/1.1" 404 -
+INFO:_internal:02-Nov-23 02:37:50 - 192.168.215.1 - - [02/Nov/2023 02:37:50] "GET /create HTTP/1.1" 200 -
+INFO:app:02-Nov-23 02:37:56 - Article with title 'Hello World' created
+INFO:_internal:02-Nov-23 02:37:56 - 192.168.215.1 - - [02/Nov/2023 02:37:56] "POST /create HTTP/1.1" 302 -
+INFO:_internal:02-Nov-23 02:37:56 - 192.168.215.1 - - [02/Nov/2023 02:37:56] "GET / HTTP/1.1" 200 -
+INFO:app:02-Nov-23 02:37:59 - Article 'Hello World' retrieved
+INFO:_internal:02-Nov-23 02:37:59 - 192.168.215.1 - - [02/Nov/2023 02:37:59] "GET /7 HTTP/1.1" 200 -
+INFO:_internal:02-Nov-23 02:38:01 - 192.168.215.1 - - [02/Nov/2023 02:38:01] "GET / HTTP/1.1" 200 -
+INFO:_internal:02-Nov-23 02:39:26 - 192.168.215.1 - - [02/Nov/2023 02:39:26] "GET /create HTTP/1.1" 200 -
+INFO:app:02-Nov-23 02:39:32 - Article with title 'new post' created
+INFO:_internal:02-Nov-23 02:39:32 - 192.168.215.1 - - [02/Nov/2023 02:39:32] "POST /create HTTP/1.1" 302 -
+INFO:_internal:02-Nov-23 02:39:32 - 192.168.215.1 - - [02/Nov/2023 02:39:32] "GET / HTTP/1.1" 200 -
+INFO:app:02-Nov-23 02:39:37 - Article 'new post' retrieved
+INFO:_internal:02-Nov-23 02:39:37 - 192.168.215.1 - - [02/Nov/2023 02:39:37] "GET /8 HTTP/1.1" 200 -
+INFO:app:02-Nov-23 02:39:40 - Article with id = 100 is not found
+INFO:_internal:02-Nov-23 02:39:40 - 192.168.215.1 - - [02/Nov/2023 02:39:40] "GET /100 HTTP/1.1" 404 -
+INFO:_internal:02-Nov-23 02:39:42 - 192.168.215.1 - - [02/Nov/2023 02:39:42] "GET / HTTP/1.1" 200 -
