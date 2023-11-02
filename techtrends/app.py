@@ -4,6 +4,7 @@ from flask import Flask, render_template, request, url_for, redirect, flash
 from werkzeug.exceptions import abort
 from datetime import datetime
 import logging
+import sys
 
 # Count all database connections
 # Define the Flask application
@@ -116,9 +117,13 @@ def initialize_logger():
         else logging.DEBUG
     )
 
+    stdout_handler = logging.StreamHandler(stream=sys.stdout)
+    stderr_handler = logging.StreamHandler(stream=sys.stderr)
+    handlers = [stdout_handler, stderr_handler]
+
     logging.basicConfig(
         format='%(levelname)s:%(name)s:%(asctime)s, %(message)s',
-                level=log_level,
+                level=log_level, handlers=handlers, 
     )
 
 # start the application on port 3111
